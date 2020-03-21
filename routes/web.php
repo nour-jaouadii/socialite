@@ -18,10 +18,10 @@ Route::get('login/{website}/callback', 'Auth\LoginController@handleProviderCallb
 
 
 
-// Route::get('mail', function () {
+Route::get('mail', function () {
 
-//     Mail::to('nour-ja19@hotmail.fr')->send(new contact());
-// });
+    Mail::to('nour-ja19@hotmail.fr')->send(new contact());
+});
 
-Route::get('/contact', 'contactMail@contact');
-Route::post('/contact', 'contactMail@mail');
+Route::get('/contact1', 'contactMail@contact');
+Route::post('/contact1', 'contactMail@mail');

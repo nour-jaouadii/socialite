@@ -1,7 +1,7 @@
 
 
 
-<form method="POST" action="/contact">
+<form method="POST" action="/contact1">
 
 @csrf
 <input type="text" name="subject" id="subject" id=""><br><br>

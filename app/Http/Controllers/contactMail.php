@@ -18,16 +18,17 @@ class contactMail extends Controller
     }
 
     public function mail(Request $request) {
-        
-       $user =  Auth::user();  
-        $data = [
+
+      $user = Auth::user();
+      
+      $data = [
               'subject' => $request->subject,
               'msg' => $request->message,
         ];
     
            
          mail::send('email.contact', $data, function($message) {
-             $message->to('nourjaouadii2@gmail.com','narnour')->subject('User contact');
+             $message->to('nour-ja19@hotmail.fr','narnour')->subject('User contact');
            
          });
        
